@@ -14,6 +14,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 
 import com.cg.world.entity.enums.Continent;
 import lombok.*;
@@ -37,6 +38,7 @@ public class Country {
     private String code;
 
     @Column(name = "Name")
+    @NotEmpty(message ="Name may not be null")
     private String name;
 
     @Enumerated(EnumType.STRING)
@@ -44,6 +46,7 @@ public class Country {
     private Continent continent;
 
     @Column(name = "Region")
+    @NotEmpty(message ="Region may not be null")
     private String region;
 
     @Column(name = "SurfaceArea")
@@ -65,18 +68,21 @@ public class Country {
     private BigDecimal gnpOld;
 
     @Column(name = "LocalName")
+    @NotEmpty(message ="LocalName may not be null")
     private String localName;
 
     @Column(name = "GovernmentForm")
     private String governmentForm;
 
     @Column(name = "HeadOfState")
+    @NotEmpty(message ="HeadOfState may not be null")
     private String headOfState;
 
     @Column(name = "Capital")
     private Integer capital;
 
     @Column(name = "Code2")
+    @NotEmpty(message ="Code2 may not be null")
     private String code2;
 
     @JsonIgnore

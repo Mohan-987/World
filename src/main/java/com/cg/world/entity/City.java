@@ -1,7 +1,6 @@
 package com.cg.world.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -22,11 +21,12 @@ public class City {
     @Column(name = "ID")
     private int id;
 
-	@NotEmpty(message = "Population Shouldn't be NULL ")
     @Column(name = "Name", columnDefinition = "char")
+    @NotNull(message ="Name may not be null")
     private String name;
 
     @Column(name = "District", columnDefinition = "char")
+    @NotNull(message ="Name may not be null")
     private String district;
 
 	@NotNull(message = "Population Shouldn't be NULL ")

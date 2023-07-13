@@ -37,17 +37,17 @@ public class CountryServiceImpl implements CountryService{
 	@Override
 	public List<Country> getAllCountries() {
 		List<Country> allCountries = countryRepository.findAll();
-		if(allCountries.isEmpty()) throw new CountryNotFoundException("No Countries Found! Check Once");
+		if(allCountries.isEmpty()) throw new CountryNotFoundException("No Countries Found!");
 		return allCountries;
 	}
 	@Override
 	public Country getOneCountry(String name) {
-		 return  countryRepository.findByName(name).orElseThrow(()->new CountryNotFoundException("Country Name Not Found "+name+" Check Once!"));
+		 return  countryRepository.findByName(name).orElseThrow(()->new CountryNotFoundException("Country Name Not Found "+name));
 	}
 	@Override
 	public String populationLifeExpectancy(String countryCode)
 	{
-		Country country = countryRepository.findByCode(countryCode).orElseThrow(()->new CountryNotFoundException("Country Code Not Found"));
+		Country country = countryRepository.findByCode(countryCode).orElseThrow(()->new CountryNotFoundException("Country Code Not Found "+countryCode));
 		String s;
 		String s1 = Integer.toString(country.getPopulation());
 		String s2 = String.valueOf(country.getLifeExpectancy());
@@ -78,7 +78,7 @@ public class CountryServiceImpl implements CountryService{
 	    }
 		@Override
 		public Collection<CountryData> getTop10PopulatedCountries() {
-		PageRequest pageRequest = PageRequest.of(0, 10); // Limit to 10 results
+		PageRequest pageRequest = PageRequest.of(0, 10);
 			 Collection<Object[]> result = countryRepository.findTop10ByOrderByPopulationDesc(pageRequest);
 			 List<CountryData> countries = new ArrayList<>();
 			 for (Object[] row : result) {
@@ -92,7 +92,7 @@ public class CountryServiceImpl implements CountryService{
 	public List<CountryLanguage> getAllLanguagesByRegion(String region) {
 	    List<Country> countries = countryRepository.findByRegion(region);
 	    if(countries.isEmpty()){
-			throw new CountryNotFoundException("No Languages Found! Check Once Country Region ");}
+			throw new CountryNotFoundException("No Languages Found for given region: "+region);}
 		List<CountryLanguage> allLanguages = new ArrayList<>();
 	        for (Country country : countries) {
 	            List<CountryLanguage> countryLanguages = country.getCountryLanguages();
@@ -134,13 +134,13 @@ public class CountryServiceImpl implements CountryService{
     }
 	@Override
 	public Country updateHeadOfState(String countryCode, String newHeadOfState) {
-	    Country country = countryRepository.findByName(countryCode).orElseThrow(()->new CountryNotFoundException(CITY_NOT_FOUND_MESSAGE));
+	    Country country = countryRepository.findByName(countryCode).orElseThrow(()->new CountryNotFoundException("Country code/Head of state are miss matched/not found "));
 		country.setHeadOfState(newHeadOfState);
 	        return countryRepository.save(country);
 	}
 	@Override
-    public Country updatePopulation(String countryCode, Integer newPopulation) {
-        Country country = countryRepository.findByName(countryCode).orElseThrow(()->new CountryNotFoundException(CITY_NOT_FOUND_MESSAGE));
+    public Country updatePopulation(String name, Integer newPopulation) {
+        Country country = countryRepository.findByName(name).orElseThrow(()->new CountryNotFoundException("Country Name not found:"+name));
         country.setPopulation(newPopulation);
         countryRepository.save(country);
         return country;

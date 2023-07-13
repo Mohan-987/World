@@ -25344,3 +25344,1107 @@
        add constraint FK6am5qbfb14acs9g4icyx7dm8j 
        foreign key (countryCode) 
        references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char,
+        Name char,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char not null,
+        Name char not null,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char not null,
+        Name char not null,
+        Population integer not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char not null,
+        Name char not null,
+        Population integer not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char not null,
+        Name char not null,
+        Population integer not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char not null,
+        Name char not null,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char not null,
+        Name char not null,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char not null,
+        Name char not null,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);
+
+    create table city (
+       ID integer not null auto_increment,
+        District char not null,
+        Name char not null,
+        Population char not null,
+        CountryCode char,
+        primary key (ID)
+    ) engine=InnoDB;
+
+    create table country (
+       Code varchar(255) not null,
+        Capital integer,
+        Code2 varchar(255),
+        Continent varchar(255),
+        GNP decimal(19,2),
+        GNPOld decimal(19,2),
+        GovernmentForm varchar(255),
+        HeadOfState varchar(255),
+        IndepYear integer,
+        LifeExpectancy double precision,
+        LocalName varchar(255),
+        Name varchar(255),
+        Population integer,
+        Region varchar(255),
+        SurfaceArea decimal(19,2),
+        primary key (Code)
+    ) engine=InnoDB;
+
+    create table countrylanguage (
+       language char not null,
+        isofficial enum('T','F'),
+        percentage decimal(19,2),
+        countryCode varchar(255),
+        primary key (language)
+    ) engine=InnoDB;
+
+    alter table city 
+       add constraint FKhgchqx3ft96qj0kut8pwnwsy0 
+       foreign key (CountryCode) 
+       references country (Code);
+
+    alter table countrylanguage 
+       add constraint FK6am5qbfb14acs9g4icyx7dm8j 
+       foreign key (countryCode) 
+       references country (Code);

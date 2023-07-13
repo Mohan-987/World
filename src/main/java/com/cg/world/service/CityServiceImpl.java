@@ -30,13 +30,13 @@ public class CityServiceImpl implements CityService {
     @Override
     public List<City> getAllCities() {
         List<City> cities = cityRepository.findAll();
-        if(cities.isEmpty()) throw new CityNotFoundException("Cities Not Found! Check The Database");
+        if(cities.isEmpty()) throw new CityNotFoundException("Cities Not Found! ");
         return cities;
     }
     @Override
     public List<String> getFirstTenCitiesStartingWithChar(char ch) {
         Optional<List<String>> cityNamesOptional = cityRepository.findFirstTenCitiesStartingWithChar(ch);
-        List<String> cityNames = cityNamesOptional.orElseThrow(() -> new CityNotFoundException("No cities found starting with the specified character."));
+        List<String> cityNames = cityNamesOptional.orElseThrow(() -> new CityNotFoundException("No cities found with given character"+ch));
         return cityNames.subList(0, Math.min(cityNames.size(), 10));
     }
     @Override
@@ -45,13 +45,13 @@ public class CityServiceImpl implements CityService {
     }
     @Override
     public List<String> getTop10PopulatedCityNames() {
-        List<City> top10Cities = cityRepository.findTop10ByOrderByPopulationDesc().orElseThrow(()->new CityNotFoundException("Unable To Get Top Ten Cities"));
+        List<City> top10Cities = cityRepository.findTop10ByOrderByPopulationDesc().orElseThrow(()->new CityNotFoundException("Unable to find the cities"));
         return top10Cities.stream().map(City::getName).collect(Collectors.toList());
     }
     @Override
     public Collection<CityRegionDto> fetchCityNamesAndRegions() {
         List<City> cities = cityRepository.findAll();
-        if(cities.isEmpty()) throw new CityNotFoundException("Unable To Get City Names And Regions! Check City Name");
+        if(cities.isEmpty()) throw new CityNotFoundException("Check the given City name and Region");
         List<CityRegionDto> cityRegionDtos = new ArrayList<>();
         for (City city : cities) {
             String region = "";
@@ -64,7 +64,7 @@ public class CityServiceImpl implements CityService {
     }
     @Override
     public List<City> getCitiesAndDistrictsByCountryCode(String countryCode) {
-        List<City> cities = cityRepository.findByCountryCode(countryCode).orElseThrow(()->new CountryNotFoundException("Country Code Not Found! Check Once"));
+        List<City> cities = cityRepository.findByCountryCode(countryCode).orElseThrow(()->new CountryNotFoundException("Country Code Not Found! Please Recheck the Country code"));
         List<City> citiesAndDistricts = new ArrayList<>();
         for (City city : cities) {
             City cityAndDistrict = new City();
@@ -76,22 +76,22 @@ public class CityServiceImpl implements CityService {
     }
     @Override
     public List<String> getDistinctDistricts() {
-        return cityRepository.findDistinctDistricts().orElseThrow(()->new CityNotFoundException("No Districts Found"));
+        return cityRepository.findDistinctDistricts().orElseThrow(()->new CityNotFoundException("Unable to get the Districts"));
     }
     @Override
     public Double getAveragePopulationByDistrict(String districtName) {
-        return cityRepository.findAveragePopulationByDistrict(districtName).orElseThrow(()->new CityNotFoundException("District Name Not Found! Check Once Again"));
+        return cityRepository.findAveragePopulationByDistrict(districtName).orElseThrow(()->new CityNotFoundException("Unable to find the District name"+districtName));
     }
     @Override
     public City updateCityDistrict(String cityName, String newDistrict) {
-        City city = cityRepository.findByName(cityName).orElseThrow(()->new CityNotFoundException("City Not Found "+cityName+" Check Once!"));
+        City city = cityRepository.findByName(cityName).orElseThrow(()->new CityNotFoundException("City Not Found "+cityName));
         city.setDistrict(newDistrict);
         cityRepository.save(city);
         return city;
     }
     @Override
     public City updatePopulationByCityName(String cityName, Integer population) {
-        City city = cityRepository.findByName(cityName).orElseThrow(()->new CityNotFoundException("City Not Found "+cityName+" Check Once!"));
+        City city = cityRepository.findByName(cityName).orElseThrow(()->new CityNotFoundException("City name Not Found "+cityName));
         city.setPopulation(population);
         return cityRepository.save(city);
     }

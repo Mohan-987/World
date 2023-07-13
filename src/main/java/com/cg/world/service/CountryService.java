@@ -25,6 +25,6 @@ public interface CountryService {
 		public List<String> getCityNamesByCountry(String countryName);
 		public List<CountryDto> getTopTenGNPCountries();
 		public Country updateHeadOfState(String countryCode, String newHeadOfState);
-		public Country updatePopulation(String countryCode, Integer newPopulation);
+		public Country updatePopulation(String name, Integer newPopulation);
 		
 }

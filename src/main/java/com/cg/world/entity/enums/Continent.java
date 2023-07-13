@@ -10,6 +10,6 @@ public enum Continent {
     Oceania,
     Europe,
     North_America,
-    South_America;
+    South_America
     
 }

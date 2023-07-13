@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cg.world.entity.CountryLanguage;
 import com.cg.world.service.CountryLanguageService;
 
-//Fetch all unique languages in world 
 @RestController
 @RequestMapping("/api/countrylang")
 public class CountryLanguageController {
