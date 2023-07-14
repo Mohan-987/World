@@ -57,9 +57,7 @@ public class CountryLanguageServiceImpl implements CountryLanguageService {
 	public List<CountryLanguage> getUnofficialLanguagesByCountryCode(String countryCode) {
 		if (countryRepository.findByCode(countryCode).isPresent()) {
 			return countryLanguageRepository.findByCountryCodeAndIsOfficial(countryCode, IsOfficial.F);
-		} else {
-			throw new CountryNotFoundException("Unable to find country code" + countryCode + "Kindly check the given Country code");
-		}
+		} else throw new CountryNotFoundException("Unable to find country code" + countryCode + "Kindly check the given Country code");
 	}
 
 	@Override

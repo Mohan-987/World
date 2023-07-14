@@ -12,8 +12,9 @@ import java.math.BigDecimal;
 
 @SpringBootTest
 class WorldApplicationTests {
-	@Autowired
+
 	private CityServiceImpl service;
+	@Autowired
 	public void setService(CityServiceImpl service) {
 		this.service = service;
 	}
@@ -28,55 +29,55 @@ class WorldApplicationTests {
 		this.countryLanguageService = countryLanguageService;
 	}
 	@Test
-	 void CityTest() {
+	 void cityTest() {
 		assertNotNull(service.getAllCities(), "error");
 	}
 	@Test
-	 void CityTopTen() {
+	 void cityTopTen() {
 		String r = "[a-z]";
 		assertNotNull(service.getFirstTenCitiesStartingWithChar(r.charAt(0)),"Error");
 	}
 	@Test
-	 void CityAllRegion() {
+	 void cityAllRegion() {
 		assertNotNull(service.fetchCityNamesAndRegions(),"Error");
 	}
 	@Test
-	 void CityDist() {
+	 void cityDist() {
 		assertNotNull(service.getDistinctDistricts());
 	}
 	@Test
-	 void CityUpDist() {
+	 void updateCityDistrict() {
 		assertNotNull(service.updateCityDistrict("Amsterdam", "Kurnool"));
 	}
 	@Test
-	 void CountryTest() {
+	 void countryTest() {
 		assertNotNull(countryService.getAllCountries(), "error");
 	}
 	@Test
-	 void CountryGetOne() {
+	 void countryGetOne() {
 		assertNotNull(countryService.getOneCountry("Anguilla"));
 	}
 	@Test
-	 void CountryPop() {
+	 void countryPopulation() {
 		assertNotNull(countryService.populationLifeExpectancy("ARE"));
 	}
 	@Test
-	 void CountryGnp() {
+	 void countryGnp() {
 		String countryName = "Anguilla";
 		double gnpValue = 9317.00;
 		BigDecimal gnp = BigDecimal.valueOf(gnpValue);
 		assertNotNull(countryService.updateGNP(countryName, gnp));
 	}
 	@Test
-	 void CountryLangAll() {
+	 void countryLangAll() {
 		assertNotNull(countryLanguageService.getAllUniqueLanguages());
 	}
 	@Test
-	 void UniqueLang() {
+	 void uniqueLanguage() {
 		assertNotNull(countryLanguageService.getAllOfficialLanguages());
 	}
 	@Test
-	 void PercentageLang() {
+	 void percentageLanguage() {
 		assertNotNull(countryLanguageService.getMaxPercentageLanguageByCountryCode("ARM"));
 	}
 }
